@@ -23,7 +23,7 @@ from django.conf import settings
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
-    
+    path('', receipes),
     path('receipes/',receipes,name="receipes"),
     path('delete/<int:id>/', delete_recipe, name="delete_recipe"),
     path('admin/', admin.site.urls),

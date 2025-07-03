@@ -25,7 +25,10 @@ SECRET_KEY = 'django-insecure-vxi^)y6m_lo4$_pbu3#xc7k=g)au^n-rtr@*9)ghh=aqma0#23
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['realfood-receipeapp.onrender.com', '127.0.0.1', 'localhost']
+
+
+
 
 
 # Application definition
@@ -119,9 +122,9 @@ import os
 
 STATIC_URL = 'static/'
 STATIC_ROOT=os.path.join(BASE_DIR,'staticfiles')
-STATICFILE_DIR={
+STATICFILE_DIR=[
     os.path.join(BASE_DIR,"public/static")
-}
+]
 MEDIA_ROOT=os.path.join(BASE_DIR,'public/static')
 MEDIA_URL='/media/'
 
